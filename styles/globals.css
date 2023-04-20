@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainPage {
+  position: center;
+}
+
+.mainPageHeading {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  letter-spacing: -2.56px;
+  max-width: 653px;
+  line-height: 1.15;
+  padding-bottom: 32px;
+}
+
+.bouncy {
+  animation: bouncy 5s infinite linear;
+  position: relative;
+}
+
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+.mainPageLogin {
+  user-select: none;
+  position: relative;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.mainPageLogin:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.mainPageSignUp:hover {
+  color: #ffffff;
+  background-color: #ffffff00;
+}
+
+.mainPageSignUp {
+  animation-delay: 0.1s;
+  user-select: none;
+  position: relative;
+  display: inline-block;
+  padding: 0.4em 1.2em;
+  border: 0.1em solid #000000;
+  margin: 0em 0.4em 0.4em 1em;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.help-page {
+  font-family: "Work Sans", sans-serif;
+}
+.faq-heading {
+  border-bottom: #777;
+  padding: 20px 90px;
+}
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body {
+  margin: auto;
+  /* text-align: center; */
+  width: 50%;
+  padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.faq-page:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.student-card {
+  position: center;
+  text-align: center;
+}
+
+.student-name {
+  border: 5px solid;
+  margin: auto;
+  width: 20%;
+  padding: 10px;
+}
+
+.generateReportButton {
+  background-color: rgb(216 180 254); /* Green */
+  border: none;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10%;
+}
